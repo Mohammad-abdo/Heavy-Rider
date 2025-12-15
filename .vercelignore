@@ -1,0 +1,14 @@
+# Vercel ignore file
+# Files and directories to exclude from Vercel deployment
+
+node_modules
+.git
+.vscode
+.idea
+*.log
+.DS_Store
+dist
+dist-ssr
+*.local
+tsconfig.node.tsbuildinfo
+
