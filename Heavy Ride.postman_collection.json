@@ -1,0 +1,2863 @@
+{
+	"info": {
+		"_postman_id": "a65636a0-cc4c-4555-ac46-bd4feac4863c",
+		"name": "Heavy Ride",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37944355"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "rideeer@heavy-rides.com",
+									"description": "req.",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "mohamed",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "94499449",
+									"type": "text"
+								},
+								{
+									"key": "re_password",
+									"value": "94499449",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "user",
+									"description": "required | in:driver,user",
+									"type": "text"
+								},
+								{
+									"key": "phone_number",
+									"value": "01159175044",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send verification code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/send-verification-code",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"send-verification-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "60530",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/verify-code",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"verify-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|837VgDgeERySrvQZziuuKATwgv1Utt78i3J5BQMuff026161",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{base_url}}/logout",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@heavy-ride.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "9449",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update tokens",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|vfzoNYXAHHDTxfZb7GgIIdTQ23g83le1vIDZ8V3cb6bc52ee",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "player_id",
+									"value": "1223",
+									"type": "text"
+								},
+								{
+									"key": "fcm_token",
+									"value": "1233",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-tokens?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-tokens"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3|vfzoNYXAHHDTxfZb7GgIIdTQ23g83le1vIDZ8V3cb6bc52ee",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "rider@heavy-rides.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/forgot-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "otp",
+									"value": "46776",
+									"type": "text"
+								},
+								{
+									"key": "remember_token",
+									"value": "2eVWETXaynUvDBEejbPLgbF6KggdlYcklOc2o11ztEE1xEBRkboETSiKXdUq",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "re_password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/reset-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|6LXlA4hPqNtvyi1NBac48ZrEiHzfLFmTOs4NEudc0812b300",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "mohamed",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "94499449",
+									"type": "text"
+								},
+								{
+									"key": "re_password",
+									"value": "94499449",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|YJUO0eQjrXKMbzLY7ZEhIhbtPPUfENz9JNXSWhdu0f20e889",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/delete-account",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-account"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cranes (mobile)",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "10|Eu5NGp5pZhbYkvA817gLgTjCplhTNL3o40ffZricb8478d2f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/get-available-online-cranes?type=light-truck&min_capacity&latitude=30.1122&longitude=30.1122",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"get-available-online-cranes"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "light-truck",
+									"description": "required|in:light-truck,refrigrated,large-freight,tanker-truck"
+								},
+								{
+									"key": "min_capacity",
+									"value": null,
+									"description": "nullable numeric"
+								},
+								{
+									"key": "latitude",
+									"value": "30.1122"
+								},
+								{
+									"key": "longitude",
+									"value": "30.1122"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single crane",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "10|Eu5NGp5pZhbYkvA817gLgTjCplhTNL3o40ffZricb8478d2f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/single-crane/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"single-crane",
+								":id"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "10|Eu5NGp5pZhbYkvA817gLgTjCplhTNL3o40ffZricb8478d2f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "light-truck",
+									"description": "required|in:light-truck,refrigrated,large-freight,tanker-truck\n",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "500",
+									"description": "required ",
+									"type": "text"
+								},
+								{
+									"key": "license_plate",
+									"value": "abc 123",
+									"description": "req",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "nullable",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/create-crane",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"create-crane"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toggle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "10|Eu5NGp5pZhbYkvA817gLgTjCplhTNL3o40ffZricb8478d2f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/crane-toggle?_method=PUT&latitude=30.1234&longitude=30.1234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"crane-toggle"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								},
+								{
+									"key": "latitude",
+									"value": "30.1234"
+								},
+								{
+									"key": "longitude",
+									"value": "30.1234"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "10|Eu5NGp5pZhbYkvA817gLgTjCplhTNL3o40ffZricb8478d2f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "refrigrated",
+									"description": "sometimes|required|in:light-truck,refrigrated,large-freight,tanker-truck",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "200",
+									"description": "sometimes|required ",
+									"type": "text"
+								},
+								{
+									"key": "license_plate",
+									"value": "abc 321",
+									"description": "sometimes|req",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "sometimes|nullable",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-crane?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-crane"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete crane",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "10|Eu5NGp5pZhbYkvA817gLgTjCplhTNL3o40ffZricb8478d2f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/delete-crane",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-crane"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rides (mobile)",
+			"item": [
+				{
+					"name": "save a ride",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "crane_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "start_latitude",
+									"value": "36.3232",
+									"type": "text"
+								},
+								{
+									"key": "start_longitude",
+									"value": "30.3693",
+									"type": "text"
+								},
+								{
+									"key": "end_latitude",
+									"value": "40.3621",
+									"type": "text"
+								},
+								{
+									"key": "end_longitude",
+									"value": "40.231",
+									"type": "text"
+								},
+								{
+									"key": "starts at",
+									"value": "10-11-2025 17:00:00",
+									"type": "text"
+								},
+								{
+									"key": "fare",
+									"value": "500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/book-a-ride",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"book-a-ride"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my rides as rider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/my-rides-as-rider?type=light-truck&status=",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"my-rides-as-rider"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "light-truck",
+									"description": "nullable|in:light-truck,refrigrated,large-freight,tanker-truck"
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "'nullable|in:pending,in_progress,accepted,refused,completed,cancelled'"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my rides as driver",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "13|k0iVV0tE2Zovo8GYqPuw8lLVvH1se8rZiGUduNjc3865b99c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/my-rides-as-driver",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"my-rides-as-driver"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "light-truck",
+									"description": "nullable|in:light-truck,refrigrated,large-freight,tanker-truck",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "",
+									"description": "'nullable|in:pending,in_progress,accepted,refused,completed,cancelled'",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accept or refuse ride",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "13|k0iVV0tE2Zovo8GYqPuw8lLVvH1se8rZiGUduNjc3865b99c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "action",
+									"value": "accepted",
+									"description": "accepted or refused",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/accept-or-refuse-ride/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"accept-or-refuse-ride",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "start the ride",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "13|k0iVV0tE2Zovo8GYqPuw8lLVvH1se8rZiGUduNjc3865b99c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "action",
+									"value": "refused",
+									"description": "accepted or refused",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/start-a-ride/:id?latitude=36.32&longitude=30.37",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"start-a-ride",
+								":id"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "36.32"
+								},
+								{
+									"key": "longitude",
+									"value": "30.37"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "end the ride",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "13|k0iVV0tE2Zovo8GYqPuw8lLVvH1se8rZiGUduNjc3865b99c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "action",
+									"value": "refused",
+									"description": "accepted or refused",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/end-a-ride/:id?latitude=40.23&longitude=40.37",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"end-a-ride",
+								":id"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "40.23"
+								},
+								{
+									"key": "longitude",
+									"value": "40.37"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel a ride",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/cancel-ride/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cancel-ride",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rate ride",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rating",
+									"value": "3",
+									"description": "int 0->5",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "gdrtjh",
+									"description": "nullable",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/rate-a-ride/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"rate-a-ride",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transactions (mobile)",
+			"item": [
+				{
+					"name": "my transactions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/my-transactions",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"my-transactions"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": null,
+									"description": "nullable in:deposit,withdraw",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": null,
+									"description": "nullable in:'pending','completed','failed' default completed",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my withdraw requests",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/my-withdraw-requests",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"my-withdraw-requests"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "completed",
+									"description": "nullable in:pending , completed",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add A Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "amount",
+									"value": "30",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/add-withdraw-request",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"add-withdraw-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "charge -my -wallet (for testing only will be redirect to payments)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|OfTqkSUnU58mf2qLkuqCdSiJzf3Hp27OYDB7SwXV0abec428",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "amount",
+									"value": "300",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/charge-my-wallet",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"charge-my-wallet"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "settings (front end)",
+			"item": [
+				{
+					"name": "settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/get-settings",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"get-settings"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": null,
+									"description": "nullable in:deposit,withdraw",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": null,
+									"description": "nullable in:'pending','completed','failed' default completed",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change Settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "minimum_fare_to_ride",
+									"value": "300",
+									"type": "text"
+								},
+								{
+									"key": "profit_type",
+									"value": "percentage",
+									"description": "in : percentage , fixed",
+									"type": "text"
+								},
+								{
+									"key": "profit_value",
+									"value": "30",
+									"description": "if percentage : less than 100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-settings?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-settings"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Riders (front end)",
+			"item": [
+				{
+					"name": "All Riders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/all-riders?search=eee&status=inactive",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"all-riders"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "eee",
+									"description": "nullable"
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "nullable in:'active,inactive"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rider toggle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/toggle-rider/:id?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"toggle-rider",
+								":id"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update rider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "m8awry",
+									"description": "sometimes req. max:255",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gfas@djk.sfdg",
+									"description": "sometimes email unique",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "01551515155",
+									"description": "egyptian regex sometimes",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "image 5120mb max sometimes",
+									"type": "file",
+									"src": "/C:/Users/user/Pictures/Screenshots/Screenshot 2025-10-27 205450.png",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "sometimes in :active,inactive",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-rider/:id?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-rider",
+								":id"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a rider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/delete-rider/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-rider",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cranes (front end)",
+			"item": [
+				{
+					"name": "All cranes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/all-cranes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"all-cranes"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "refrigrated",
+									"description": "nullable , in:'light-truck','refrigrated','large-freight','tanker-truck'",
+									"disabled": true
+								},
+								{
+									"key": "min_capacity",
+									"value": "550",
+									"description": "nullable int",
+									"disabled": true
+								},
+								{
+									"key": "max_capacity",
+									"value": "560",
+									"description": "nullable int",
+									"disabled": true
+								},
+								{
+									"key": "license_plate",
+									"value": "1234",
+									"description": "nullable search in plates",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "in_progress",
+									"description": "nullable|in:available,in_progress",
+									"disabled": true
+								},
+								{
+									"key": "is_online",
+									"value": "1",
+									"description": "nullable | in:0,1",
+									"disabled": true
+								},
+								{
+									"key": "min_rating",
+									"value": "4",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single crane",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/single-crane/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"single-crane",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update crane",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "tanker-truck",
+									"description": "sometimes|required|in:light-truck,refrigrated,large-freight,tanker-truck",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "capacity",
+									"value": "1000",
+									"description": "sometimes|required|integer|min:0",
+									"type": "text"
+								},
+								{
+									"key": "license_plate",
+									"value": "gcvbdjf ",
+									"description": "sometimes|required|string|max:50",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"description": "sometimes|nullable|image|max:5120",
+									"type": "file",
+									"src": "/C:/Users/user/Pictures/Screenshots/Screenshot 2025-10-27 204039.png",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-crane/:id?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-crane",
+								":id"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a rider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/delete-crane/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-crane",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Drivers (front end)",
+			"item": [
+				{
+					"name": "All Drivers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/all-drivers",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"all-drivers"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "er@heavy-rides.",
+									"description": "nullable",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "nullable in:'active,inactive",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "driver toggle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/toggle-driver/:id?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"toggle-driver",
+								":id"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update rider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "m8awry",
+									"description": "sometimes req. max:255",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gfas@djk.sfdg",
+									"description": "sometimes email unique",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "01551515155",
+									"description": "egyptian regex sometimes",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "image 5120mb max sometimes",
+									"type": "file",
+									"src": "/C:/Users/user/Pictures/Screenshots/Screenshot 2025-10-27 205450.png",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "sometimes in :active,inactive",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-driver/:id?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-driver",
+								":id"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a rider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/delete-driver/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-driver",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admins (front end)",
+			"item": [
+				{
+					"name": "All Admins",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/all-admins",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"all-admins"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "er@heavy-rides.",
+									"description": "nullable",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "nullable in:'active,inactive",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Permissions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/all-permissions",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"all-permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed ashraf",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "fhwg@dkugf.sdfgs",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01522334459",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "permissions[]",
+									"value": "cranes",
+									"type": "text"
+								},
+								{
+									"key": "permissions[]",
+									"value": "drivers",
+									"type": "text"
+								},
+								{
+									"key": "permissions[]",
+									"value": "riders",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/user/Pictures/Screenshots/Screenshot 2025-11-09 203405.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/create-admin",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"create-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin toggle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/toggle-admin/:id?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"toggle-admin",
+								":id"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "m8awry23",
+									"description": "sometimes req. max:255",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gfas@djk.sfdg",
+									"description": "sometimes email unique",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "01551515155",
+									"description": "egyptian regex sometimes",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"description": "image 5120mb max sometimes",
+									"type": "file",
+									"src": "/C:/Users/user/Pictures/Screenshots/Screenshot 2025-11-09 203405.png"
+								},
+								{
+									"key": "status",
+									"value": "inactive",
+									"description": "sometimes in :active,inactive",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "permissions[]",
+									"value": "cranes",
+									"type": "text"
+								},
+								{
+									"key": "permissions[]",
+									"value": "drivers",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/update-admin/:id?_method=PUT",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update-admin",
+								":id"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete an admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "14|aH2k4ryAhw0XMz3e5HrAgAy5dH2stKAOTCRQAhyS950d426a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/delete-admin/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"delete-admin",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "{{base_url}}",
+			"value": ""
+		},
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

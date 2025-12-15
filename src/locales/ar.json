@@ -1,0 +1,456 @@
+{
+  "common": {
+    "welcome": "مرحبًا",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء"
+  },
+  "languages": {
+    "label": "اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+  "topbar": {
+    "searchPlaceholder": "ابحث..."
+  },
+  "menu": {
+    "general": "عام",
+    "dashboard": "لوحة التحكم",
+    "heavyRide": "الحمولات الثقيلة",
+    "cranes": "الرافعات",
+    "rides": "الرحلات",
+    "drivers": "السائقون",
+    "transactions": "المعاملات",
+    "adminsTitle": "المديرون",
+    "admins": "المديرون",
+    "account": "الحساب",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات"
+  },
+  "profileDropdown": {
+    "welcome": "مرحبًا {{name}}",
+    "profile": "الملف الشخصي",
+    "help": "مساعدة",
+    "lock": "قفل الشاشة",
+    "logout": "تسجيل الخروج"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "description": "الإعدادات العامة",
+    "language": "اللغة",
+    "currency": "العملة",
+    "timezone": "المنطقة الزمنية",
+    "date_format": "تنسيق التاريخ",
+    "time_format": "تنسيق الوقت"
+  },
+  "Failed to load dashboard": "فشل تحميل لوحة التحكم",
+  "Dashboard Overview": "نظرة عامة على لوحة التحكم",
+  "Welcome back, {{name}}!": "مرحبًا بعودتك، {{name}}!",
+  "Admin": "مدير",
+  "Loading...": "جاري التحميل...",
+  "Refresh": "تحديث",
+  "Active Rate": "معدل النشاط",
+  "View More": "عرض المزيد",
+  "Total Riders": "إجمالي الركاب",
+  "Total Drivers": "إجمالي السائقين",
+  "Total Cranes": "إجمالي الرافعات",
+  "Total Admins": "إجمالي المديرين",
+  "Wallet Balance": "رصيد المحفظة",
+  "Total Users": "إجمالي المستخدمين",
+  "Active Entities": "الكيانات النشطة",
+  "Active Riders": "الركاب النشطون",
+  "Active Drivers": "السائقون النشطون",
+  "Available Cranes": "الرافعات المتاحة",
+  "Active Admins": "المديرون النشطون",
+  "Riders": "الركاب",
+  "Drivers": "السائقون",
+  "Cranes": "الرافعات",
+  "Admins": "المديرون",
+  "View All": "عرض الكل",
+  "Entity Summary": "ملخص الكيانات",
+  "Entity": "الكيان",
+  "Total": "الإجمالي",
+  "Active": "نشط",
+  "Activity Rate": "معدل النشاط",
+  "Entity Distribution": "توزيع الكيانات",
+  "No data available": "لا توجد بيانات",
+  "New Registration": "تسجيل جديد",
+  "Available": "متاح",
+  "Recent Activity": "النشاط الأخير",
+  "Type": "النوع",
+  "Action": "الإجراء",
+  "Count": "العدد",
+  "Status": "الحالة",
+  "Inactive": "غير نشط",
+  "System Activity Rate": "معدل نشاط النظام",
+  "Active entities across the system": "الكيانات النشطة عبر النظام",
+  "System Overview": "نظرة عامة على النظام",
+  "Entity statistics and activity": "إحصائيات الكيانات والنشاط",
+  "Total Entities": "إجمالي الكيانات",
+  "Completion": "الاكتمال",
+  "Active {{count}}": "{{count}} نشط",
+  "Total {{count}}": "{{count}} إجمالي",
+  "Loading rides…": "جاري تحميل الرحلات…",
+  "No upcoming rides to display.": "لا توجد رحلات قادمة للعرض.",
+  "Ride": "رحلة",
+  "Start": "البدء",
+  "Fare": "الأجرة",
+  "Unknown": "غير معروف",
+  "All Cranes": "كل الرافعات",
+  "Add Crane": "إضافة رافعة",
+  "All Types": "كل الأنواع",
+  "Light Truck": "شاحنة خفيفة",
+  "Refrigerated": "مبردة",
+  "Large Freight": "شحن كبير",
+  "Tanker Truck": "شاحنة صهريج",
+  "Min Capacity": "الحد الأدنى للحمولة",
+  "Max Capacity": "الحد الأقصى للحمولة",
+  "License Plate": "رقم اللوحة",
+  "All Status": "كل الحالات",
+  "Online Status": "حالة الاتصال",
+  "All": "الكل",
+  "Online": "متصل",
+  "Offline": "غير متصل",
+  "Min Rating": "الحد الأدنى للتقييم",
+  "Apply Filters": "تطبيق الفلاتر",
+  "Reset": "إعادة تعيين",
+  "ID": "المعرف",
+  "Image": "الصورة",
+  "Capacity": "الحمولة",
+  "Rating": "التقييم",
+  "Actions": "الإجراءات",
+  "Loading cranes...": "جاري تحميل الرافعات...",
+  "Crane image": "صورة الرافعة",
+  "No cranes found.": "لا توجد رافعات.",
+  "Crane created successfully": "تم إنشاء الرافعة بنجاح",
+  "Crane updated successfully": "تم تحديث الرافعة بنجاح",
+  "Failed to create crane": "فشل في إنشاء الرافعة",
+  "Failed to update crane": "فشل في تحديث الرافعة",
+  "Crane deleted successfully": "تم حذف الرافعة بنجاح",
+  "Failed to delete crane": "فشل في حذف الرافعة",
+  "Create Crane": "إنشاء رافعة",
+  "Edit Crane": "تعديل رافعة",
+  "Capacity (kg)": "الحمولة (كجم)",
+  "(Leave empty to keep current image)": "(اتركه فارغًا للحفاظ على الصورة الحالية)",
+  "Current image:": "الصورة الحالية:",
+  "Current image": "الصورة الحالية",
+  "Cancel": "إلغاء",
+  "Saving...": "جاري الحفظ...",
+  "Update Crane": "تحديث رافعة",
+  "Delete Crane": "حذف رافعة",
+  "Are you sure you want to delete crane #{{id}}?": "هل أنت متأكد أنك تريد حذف الرافعة رقم {{id}}؟",
+  "Deleting...": "جاري الحذف...",
+  "auth": {
+    "common": {
+      "backTo": "العودة إلى"
+    },
+    "fields": {
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "name": "الاسم الكامل",
+      "phone": "رقم الهاتف"
+    },
+    "placeholders": {
+      "email": "أدخل بريدك الإلكتروني",
+      "password": "أدخل كلمة المرور",
+      "confirmPassword": "أكد كلمة المرور",
+      "name": "أدخل اسمك",
+      "phone": "أدخل رقم هاتفك"
+    },
+    "signIn": {
+      "title": "تسجيل الدخول",
+      "subtitle": "أدخل بريدك الإلكتروني وكلمة المرور للوصول إلى لوحة التحكم.",
+      "noAccount": "ليس لديك حساب؟",
+      "resetPasswordLink": "إعادة تعيين كلمة المرور",
+      "rememberMe": "تذكرني",
+      "submit": "تسجيل الدخول",
+      "loginFailed": "فشل تسجيل الدخول"
+    },
+    "signUp": {
+      "title": "إنشاء حساب",
+      "subtitle": "جديد على منصتنا؟ أنشئ حسابك الآن!",
+      "orWith": "أو سجل بواسطة",
+      "withGoogle": "التسجيل بواسطة جوجل",
+      "withFacebook": "التسجيل بواسطة فيسبوك",
+      "haveAccount": "لدي حساب بالفعل",
+      "accountType": "نوع الحساب",
+      "types": {
+        "rider": "راكب",
+        "driver": "سائق"
+      },
+      "success": "تم إنشاء الحساب. يرجى التحقق من بريدك الإلكتروني.",
+      "failed": "فشل التسجيل",
+      "loading": "جاري التسجيل...",
+      "submit": "إنشاء حساب",
+      "terms": "أوافق على الشروط والأحكام"
+    },
+    "reset": {
+      "title": "إعادة تعيين كلمة المرور",
+      "subtitle": "أدخل البيانات المطلوبة لإعادة تعيين كلمة المرور.",
+      "requestSuccess": "تم إرسال رمز إعادة التعيين إلى بريدك الإلكتروني.",
+      "requestFailed": "فشل إرسال رمز إعادة التعيين",
+      "success": "تمت إعادة تعيين كلمة المرور بنجاح.",
+      "failed": "فشل إعادة تعيين كلمة المرور",
+      "requestLoading": "جاري الإرسال...",
+      "requestSubmit": "إرسال رمز إعادة التعيين",
+      "fields": {
+        "code": "رمز التحقق",
+        "token": "رمز إعادة التعيين",
+        "password": "كلمة المرور الجديدة",
+        "confirmPassword": "تأكيد كلمة المرور الجديدة"
+      },
+      "placeholders": {
+        "code": "أدخل الرمز المرسل إلى بريدك الإلكتروني",
+        "token": "الرمز المرسل في البريد الإلكتروني",
+        "password": "أدخل كلمة المرور الجديدة",
+        "confirmPassword": "أكد كلمة المرور الجديدة"
+      },
+      "resetLoading": "جاري إعادة التعيين...",
+      "resetSubmit": "إعادة تعيين كلمة المرور",
+      "back": "عودة",
+      "doneTitle": "تمت إعادة تعيين كلمة المرور",
+      "doneSubtitle": "تم تحديث كلمة المرور الخاصة بك. يمكنك الآن تسجيل الدخول.",
+      "goToSignIn": "الذهاب لتسجيل الدخول",
+      "validation": {
+        "codeRequired": "يرجى إدخال رمز التحقق",
+        "tokenMissing": "رمز إعادة التعيين مفقود",
+        "passwordRequired": "يرجى إدخال كلمة المرور الجديدة",
+        "confirmPasswordRequired": "يرجى تأكيد كلمة المرور",
+        "passwordMin": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+        "passwordsMismatch": "كلمتا المرور غير متطابقتين"
+      }
+    },
+    "verify": {
+      "title": "تأكيد البريد",
+      "subtitle": "أدخل رمز التحقق المرسل إلى بريدك الإلكتروني {{email}}.",
+      "fields": {
+        "code": "رمز التحقق"
+      },
+      "placeholders": {
+        "code": "أدخل الرمز"
+      },
+      "loading": "جاري التحقق...",
+      "submit": "تأكيد البريد",
+      "resend": "إعادة إرسال الرمز",
+      "success": "تم التحقق من البريد الإلكتروني بنجاح.",
+      "invalidCode": "رمز تحقق غير صحيح",
+      "resendSuccess": "تم إرسال رمز التحقق.",
+      "resendFailed": "فشل إرسال رمز التحقق",
+      "validation": {
+        "codeRequired": "يرجى إدخال رمز التحقق"
+      }
+    },
+    "validation": {
+      "nameRequired": "يرجى إدخال الاسم",
+      "emailInvalid": "يرجى إدخال بريد إلكتروني صالح",
+      "emailRequired": "يرجى إدخال البريد الإلكتروني",
+      "phoneRequired": "يرجى إدخال رقم الهاتف",
+      "accountTypeRequired": "يرجى اختيار نوع الحساب",
+      "passwordMin": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+      "passwordRequired": "يرجى إدخال كلمة المرور",
+      "confirmPasswordRequired": "يرجى تأكيد كلمة المرور",
+      "passwordsMismatch": "كلمتا المرور غير متطابقتين",
+      "termsRequired": "يجب الموافقة على الشروط"
+    }
+  },
+  "profile": {
+    "pageTitle": "الملف الشخصي",
+    "main": {
+      "unknown": "غير معروف",
+      "verified": "مؤكد",
+      "pending": "قيد الانتظار",
+      "joinedAt": "انضم بتاريخ {{date}}",
+      "joinDateUnavailable": "تاريخ الانضمام غير متاح",
+      "primaryCrane": "الرافعة الأساسية",
+      "refresh": "تحديث الملف",
+      "walletBalance": "رصيد المحفظة",
+      "completedRides": "الرحلات المكتملة",
+      "activeRides": "الرحلات النشطة",
+      "accountStatus": "حالة الحساب",
+      "emailVerification": "تأكيد البريد",
+      "accountType": "نوع الحساب"
+    },
+    "about": {
+      "accountDetails": "تفاصيل الحساب",
+      "reload": "إعادة تحميل",
+      "sendVerification": "إرسال رمز التحقق",
+      "verificationSent": "تم إرسال رمز التحقق إلى بريدك.",
+      "verificationFailed": "فشل إرسال رمز التحقق",
+      "profileUpdated": "تم تحديث الملف الشخصي بنجاح.",
+      "profileUpdateFailed": "فشل تحديث الملف الشخصي",
+      "passwordUpdated": "تم تحديث كلمة المرور بنجاح.",
+      "passwordUpdateFailed": "فشل تحديث كلمة المرور",
+      "location": "الموقع",
+      "editProfile": "تعديل الملف الشخصي",
+      "changePassword": "تغيير كلمة المرور",
+      "notificationTokens": "رموز الإشعارات",
+      "fields": {
+        "name": "الاسم الكامل",
+        "phone": "رقم الهاتف",
+        "image": "صورة الملف الشخصي",
+        "newPassword": "كلمة المرور الجديدة",
+        "confirmPassword": "تأكيد كلمة المرور"
+      },
+      "placeholders": {
+        "name": "أدخل اسمك",
+        "phone": "أدخل رقم هاتفك",
+        "newPassword": "أدخل كلمة المرور الجديدة",
+        "confirmPassword": "أكد كلمة المرور"
+      },
+      "tokens": {
+        "playerId": "Player ID",
+        "fcmToken": "رمز FCM"
+      },
+      "metadata": {
+        "userId": "معرف المستخدم",
+        "accountType": "نوع الحساب",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "updatedAt": "آخر تحديث",
+        "lastLogin": "آخر تسجيل دخول"
+      },
+      "locationFields": {
+        "latitude": "خط العرض",
+        "longitude": "خط الطول",
+        "city": "المدينة",
+        "country": "الدولة"
+      },
+      "noTokens": "لا توجد رموز إشعارات مرتبطة بهذا الحساب.",
+      "saving": "جاري الحفظ...",
+      "saveChanges": "حفظ التغييرات",
+      "updating": "جاري التحديث...",
+      "updatePassword": "تحديث كلمة المرور",
+      "validation": {
+        "nameRequired": "يرجى إدخال اسمك",
+        "passwordMin": "كلمة المرور يجب أن تكون 6 أحرف على الأقل",
+        "passwordRequired": "يرجى إدخال كلمة المرور",
+        "passwordsMismatch": "كلمتا المرور غير متطابقتين",
+        "confirmPasswordRequired": "يرجى تأكيد كلمة المرور"
+      }
+    }
+  },
+  "admins": {
+    "pageTitle": "المديرون",
+    "listTitle": "المديرون المتاحون",
+    "searchPlaceholder": "بحث...",
+    "filters": {
+      "allStatus": "كل الحالات"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "table": {
+      "id": "المعرف",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "image": "الصورة",
+      "status": "الحالة",
+      "permissions": "الصلاحيات",
+      "actions": "الإجراءات"
+    },
+    "actions": {
+      "add": "إضافة مدير",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "activate": "تفعيل",
+      "deactivate": "تعطيل",
+      "loading": "جاري التنفيذ...",
+      "cancel": "إلغاء",
+      "create": "إنشاء",
+      "save": "حفظ التغييرات"
+    },
+    "notifications": {
+      "fetchFailed": "فشل تحميل المديرين",
+      "createSuccess": "تم إنشاء المدير بنجاح",
+      "updateSuccess": "تم تحديث المدير بنجاح",
+      "saveFailed": "فشل حفظ المدير",
+      "deleteSuccess": "تم حذف المدير بنجاح",
+      "deleteFailed": "فشل حذف المدير",
+      "toggleFailed": "فشل تغيير حالة المدير",
+      "deactivated": "تم تعطيل المدير",
+      "activated": "تم تفعيل المدير"
+    },
+    "loading": "جاري تحميل المديرين...",
+    "empty": "لا يوجد مديرون.",
+    "deleteConfirm": "هل أنت متأكد أنك تريد حذف {{name}}؟",
+    "deleteModal": {
+      "title": "حذف مدير",
+      "body": "هل أنت متأكد من حذف {{name}}؟"
+    },
+    "modal": {
+      "createTitle": "إنشاء مدير",
+      "editTitle": "تعديل مدير"
+    },
+    "fields": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "status": "الحالة",
+      "password": "كلمة المرور",
+      "permissions": "الصلاحيات",
+      "image": "الصورة"
+    },
+    "placeholders": {
+      "password": "أدخل كلمة المرور"
+    }
+  },
+  "drivers": {
+    "pageTitle": "السائقون",
+    "listTitle": "جميع السائقين",
+    "searchPlaceholder": "بحث...",
+    "filters": {
+      "allStatus": "كل الحالات"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "table": {
+      "id": "المعرف",
+      "image": "الصورة",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "actions": {
+      "refresh": "تحديث",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "activate": "تفعيل",
+      "deactivate": "تعطيل",
+      "loading": "جاري التنفيذ...",
+      "cancel": "إلغاء",
+      "save": "حفظ التغييرات"
+    },
+    "notifications": {
+      "fetchFailed": "فشل تحميل السائقين",
+      "deleteSuccess": "تم حذف السائق بنجاح",
+      "deleteFailed": "فشل حذف السائق",
+      "updateSuccess": "تم تحديث السائق بنجاح",
+      "updateFailed": "فشل تحديث السائق",
+      "deactivated": "تم تعطيل السائق",
+      "activated": "تم تفعيل السائق",
+      "toggleFailed": "فشل تغيير حالة السائق"
+    },
+    "loading": "جاري تحميل السائقين...",
+    "empty": "لا يوجد سائقون.",
+    "deleteModal": {
+      "title": "حذف سائق",
+      "body": "هل أنت متأكد من حذف {{name}}؟"
+    },
+    "editModal": {
+      "title": "تعديل السائق"
+    },
+    "fields": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "status": "الحالة",
+      "image": "الصورة"
+    }
+  }
+}

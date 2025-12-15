@@ -1,0 +1,455 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "languages": {
+    "label": "Language",
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "topbar": {
+    "searchPlaceholder": "Search..."
+  },
+  "menu": {
+    "general": "General",
+    "dashboard": "Dashboard",
+    "heavyRide": "Heavy Ride",
+    "cranes": "Cranes",
+    "rides": "Rides",
+    "drivers": "Drivers",
+    "transactions": "Transactions",
+    "adminsTitle": "Admins",
+    "admins": "Admins",
+    "account": "Account",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "profileDropdown": {
+    "welcome": "Welcome {{name}}",
+    "profile": "Profile",
+    "help": "Help",
+    "lock": "Lock screen",
+    "logout": "Logout"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "General settings",
+    "language": "Language",
+    "currency": "Currency",
+    "timezone": "Timezone",
+    "date_format": "Date format",
+    "time_format": "Time format"
+  },
+  "Failed to load dashboard": "Failed to load dashboard",
+  "Dashboard Overview": "Dashboard Overview",
+  "Welcome back, {{name}}!": "Welcome back, {{name}}!",
+  "Admin": "Admin",
+  "Loading...": "Loading...",
+  "Refresh": "Refresh",
+  "Active Rate": "Active Rate",
+  "View More": "View More",
+  "Total Riders": "Total Riders",
+  "Total Drivers": "Total Drivers",
+  "Total Cranes": "Total Cranes",
+  "Total Admins": "Total Admins",
+  "Wallet Balance": "Wallet Balance",
+  "Total Users": "Total Users",
+  "Active Entities": "Active Entities",
+  "Active Riders": "Active Riders",
+  "Active Drivers": "Active Drivers",
+  "Available Cranes": "Available Cranes",
+  "Active Admins": "Active Admins",
+  "Riders": "Riders",
+  "Drivers": "Drivers",
+  "Cranes": "Cranes",
+  "Admins": "Admins",
+  "View All": "View All",
+  "Entity Summary": "Entity Summary",
+  "Entity": "Entity",
+  "Total": "Total",
+  "Active": "Active",
+  "Activity Rate": "Activity Rate",
+  "Entity Distribution": "Entity Distribution",
+  "No data available": "No data available",
+  "New Registration": "New Registration",
+  "Available": "Available",
+  "Recent Activity": "Recent Activity",
+  "Type": "Type",
+  "Action": "Action",
+  "Count": "Count",
+  "Status": "Status",
+  "Inactive": "Inactive",
+  "System Activity Rate": "System Activity Rate",
+  "Active entities across the system": "Active entities across the system",
+  "System Overview": "System Overview",
+  "Entity statistics and activity": "Entity statistics and activity",
+  "Total Entities": "Total Entities",
+  "Completion": "Completion",
+  "Active {{count}}": "Active {{count}}",
+  "Total {{count}}": "Total {{count}}",
+  "Loading rides…": "Loading rides…",
+  "No upcoming rides to display.": "No upcoming rides to display.",
+  "Ride": "Ride",
+  "Start": "Start",
+  "Fare": "Fare",
+  "Unknown": "Unknown",
+  "Cranes": "Cranes",
+  "All Cranes": "All Cranes",
+  "Add Crane": "Add Crane",
+  "All Types": "All Types",
+  "Light Truck": "Light Truck",
+  "Refrigerated": "Refrigerated",
+  "Large Freight": "Large Freight",
+  "Tanker Truck": "Tanker Truck",
+  "Min Capacity": "Min Capacity",
+  "Max Capacity": "Max Capacity",
+  "License Plate": "License Plate",
+  "All Status": "All Status",
+  "Online Status": "Online Status",
+  "All": "All",
+  "Online": "Online",
+  "Offline": "Offline",
+  "Min Rating": "Min Rating",
+  "Apply Filters": "Apply Filters",
+  "Reset": "Reset",
+  "ID": "ID",
+  "Image": "Image",
+  "Capacity": "Capacity",
+  "Rating": "Rating",
+  "Actions": "Actions",
+  "Loading cranes...": "Loading cranes...",
+  "Crane image": "Crane image",
+  "No cranes found.": "No cranes found.",
+  "Crane created successfully": "Crane created successfully",
+  "Crane updated successfully": "Crane updated successfully",
+  "Failed to create crane": "Failed to create crane",
+  "Failed to update crane": "Failed to update crane",
+  "Crane deleted successfully": "Crane deleted successfully",
+  "Failed to delete crane": "Failed to delete crane",
+  "Create Crane": "Create Crane",
+  "Edit Crane": "Edit Crane",
+  "Capacity (kg)": "Capacity (kg)",
+  "(Leave empty to keep current image)": "(Leave empty to keep current image)",
+  "Current image:": "Current image:",
+  "Current image": "Current image",
+  "Cancel": "Cancel",
+  "Saving...": "Saving...",
+  "Update Crane": "Update Crane",
+  "Delete Crane": "Delete Crane",
+  "Are you sure you want to delete crane #{{id}}?": "Are you sure you want to delete crane #{{id}}?",
+  "Deleting...": "Deleting...",
+  "auth": {
+    "common": {
+      "backTo": "Back to"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "name": "Full Name",
+      "phone": "Phone Number"
+    },
+    "placeholders": {
+      "email": "Enter your email",
+      "password": "Enter your password",
+      "confirmPassword": "Confirm your password",
+      "name": "Enter your name",
+      "phone": "Enter your phone number"
+    },
+    "signIn": {
+      "title": "Sign In",
+      "subtitle": "Enter your email address and password to access the admin panel.",
+      "noAccount": "Don't have an account?",
+      "resetPasswordLink": "Reset password",
+      "rememberMe": "Remember me",
+      "submit": "Sign In",
+      "loginFailed": "Login failed"
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "subtitle": "New to our platform? Sign up now! It only takes a minute.",
+      "orWith": "Or sign up with",
+      "withGoogle": "Sign up with Google",
+      "withFacebook": "Sign up with Facebook",
+      "haveAccount": "I already have an account",
+      "accountType": "Account Type",
+      "types": {
+        "rider": "Rider",
+        "driver": "Driver"
+      },
+      "success": "Account created. Please verify your email.",
+      "failed": "Registration failed",
+      "loading": "Signing up...",
+      "submit": "Sign Up",
+      "terms": "I accept the Terms and Conditions"
+    },
+    "reset": {
+      "title": "Reset Password",
+      "subtitle": "Enter the required details to reset your password.",
+      "requestSuccess": "Reset code sent to your email.",
+      "requestFailed": "Failed to send reset code",
+      "success": "Password has been reset successfully.",
+      "failed": "Failed to reset password",
+      "requestLoading": "Sending...",
+      "requestSubmit": "Send Reset Code",
+      "fields": {
+        "code": "Verification Code",
+        "token": "Reset Token",
+        "password": "New Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "placeholders": {
+        "code": "Enter the code sent to your email",
+        "token": "Token provided in the email",
+        "password": "Enter your new password",
+        "confirmPassword": "Confirm your new password"
+      },
+      "resetLoading": "Resetting...",
+      "resetSubmit": "Reset Password",
+      "back": "Back",
+      "doneTitle": "Password Reset",
+      "doneSubtitle": "Your password has been updated. You can now sign in with your new credentials.",
+      "goToSignIn": "Go to Sign In",
+      "validation": {
+        "codeRequired": "Please enter the verification code",
+        "tokenMissing": "Missing reset token",
+        "passwordRequired": "Please enter your new password",
+        "confirmPasswordRequired": "Please confirm your password"
+      }
+    },
+    "verify": {
+      "title": "Verify Email",
+      "subtitle": "Enter the verification code sent to your email {{email}}.",
+      "fields": {
+        "code": "Verification Code"
+      },
+      "placeholders": {
+        "code": "Enter the code"
+      },
+      "loading": "Verifying...",
+      "submit": "Verify Email",
+      "resend": "Resend Code",
+      "success": "Email verified successfully.",
+      "invalidCode": "Invalid verification code",
+      "resendSuccess": "Verification code sent.",
+      "resendFailed": "Failed to send verification code",
+      "validation": {
+        "codeRequired": "Please enter the verification code"
+      }
+    },
+    "validation": {
+      "nameRequired": "Please enter your name",
+      "emailInvalid": "Please enter a valid email",
+      "emailRequired": "Please enter your email",
+      "phoneRequired": "Please enter your phone number",
+      "accountTypeRequired": "Please select account type",
+      "passwordMin": "Password must be at least 6 characters",
+      "passwordRequired": "Please enter your password",
+      "passwordsMismatch": "Passwords do not match",
+      "confirmPasswordRequired": "Please confirm your password",
+      "termsRequired": "You must accept the terms"
+    }
+  },
+  "profile": {
+    "pageTitle": "Profile",
+    "main": {
+      "unknown": "Unknown",
+      "verified": "Verified",
+      "pending": "Pending",
+      "joinedAt": "Joined {{date}}",
+      "joinDateUnavailable": "Join date unavailable",
+      "primaryCrane": "Primary Crane",
+      "refresh": "Refresh Profile",
+      "walletBalance": "Wallet Balance",
+      "completedRides": "Completed Rides",
+      "activeRides": "Active Rides",
+      "accountStatus": "Account Status",
+      "emailVerification": "Email Verification",
+      "accountType": "Account Type"
+    },
+    "about": {
+      "accountDetails": "Account Details",
+      "reload": "Reload",
+      "sendVerification": "Send Verification Code",
+      "verificationSent": "Verification code sent to your email.",
+      "verificationFailed": "Failed to send verification code",
+      "profileUpdated": "Profile updated successfully.",
+      "profileUpdateFailed": "Failed to update profile",
+      "passwordUpdated": "Password updated successfully.",
+      "passwordUpdateFailed": "Failed to update password",
+      "location": "Location",
+      "editProfile": "Edit Profile",
+      "changePassword": "Change Password",
+      "notificationTokens": "Notification Tokens",
+      "fields": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "image": "Profile Image",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "placeholders": {
+        "name": "Enter your name",
+        "phone": "Enter your phone number",
+        "newPassword": "Enter new password",
+        "confirmPassword": "Confirm new password"
+      },
+      "tokens": {
+        "playerId": "Player ID",
+        "fcmToken": "FCM Token"
+      },
+      "metadata": {
+        "userId": "User ID",
+        "accountType": "Account Type",
+        "email": "Email",
+        "phone": "Phone",
+        "updatedAt": "Updated At",
+        "lastLogin": "Last Login"
+      },
+      "locationFields": {
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "city": "City",
+        "country": "Country"
+      },
+      "noTokens": "No push tokens are linked to this account.",
+      "saving": "Saving...",
+      "saveChanges": "Save Changes",
+      "updating": "Updating...",
+      "updatePassword": "Update Password",
+      "validation": {
+        "nameRequired": "Please enter your name",
+        "passwordMin": "Password must be at least 6 characters",
+        "passwordRequired": "Please enter a new password",
+        "passwordsMismatch": "Passwords do not match",
+        "confirmPasswordRequired": "Please confirm your password"
+      }
+    }
+  },
+  "admins": {
+    "pageTitle": "Admins",
+    "listTitle": "Available Admins",
+    "searchPlaceholder": "Search...",
+    "filters": {
+      "allStatus": "All Status"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "image": "Image",
+      "status": "Status",
+      "permissions": "Permissions",
+      "actions": "Actions"
+    },
+    "actions": {
+      "add": "Add Admin",
+      "edit": "Edit",
+      "delete": "Delete",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "loading": "Processing...",
+      "cancel": "Cancel",
+      "create": "Create",
+      "save": "Save Changes"
+    },
+    "notifications": {
+      "fetchFailed": "Failed to fetch admins",
+      "createSuccess": "Admin created successfully",
+      "updateSuccess": "Admin updated successfully",
+      "saveFailed": "Failed to save admin",
+      "deleteSuccess": "Admin deleted successfully",
+      "deleteFailed": "Failed to delete admin",
+      "toggleFailed": "Failed to toggle admin status",
+      "deactivated": "Admin deactivated successfully",
+      "activated": "Admin activated successfully"
+    },
+    "loading": "Loading admins...",
+    "empty": "No admins found.",
+    "deleteConfirm": "Are you sure you want to delete {{name}}?",
+    "deleteModal": {
+      "title": "Delete Admin",
+      "body": "Are you sure you want to delete {{name}}?"
+    },
+    "modal": {
+      "createTitle": "Create Admin",
+      "editTitle": "Edit Admin"
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "password": "Password",
+      "permissions": "Permissions",
+      "image": "Image"
+    },
+    "placeholders": {
+      "password": "Enter password"
+    }
+  },
+  "drivers": {
+    "pageTitle": "Drivers",
+    "listTitle": "All Drivers",
+    "searchPlaceholder": "Search...",
+    "filters": {
+      "allStatus": "All Status"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "table": {
+      "id": "ID",
+      "image": "Image",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actions": {
+      "refresh": "Refresh",
+      "edit": "Edit",
+      "delete": "Delete",
+      "activate": "Activate",
+      "deactivate": "Deactivate",
+      "loading": "Processing...",
+      "cancel": "Cancel",
+      "save": "Save Changes"
+    },
+    "notifications": {
+      "fetchFailed": "Failed to load drivers",
+      "deleteSuccess": "Driver deleted successfully",
+      "deleteFailed": "Failed to delete driver",
+      "updateSuccess": "Driver updated successfully",
+      "updateFailed": "Failed to update driver",
+      "deactivated": "Driver deactivated successfully",
+      "activated": "Driver activated successfully",
+      "toggleFailed": "Failed to toggle driver status"
+    },
+    "loading": "Loading drivers...",
+    "empty": "No drivers found.",
+    "deleteModal": {
+      "title": "Delete Driver",
+      "body": "Are you sure you want to delete {{name}}?"
+    },
+    "editModal": {
+      "title": "Edit Driver"
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "image": "Image"
+    }
+  }
+}

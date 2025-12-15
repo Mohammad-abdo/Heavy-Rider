@@ -1,0 +1,91 @@
+export const MENU_ITEMS = [
+  {
+    key: 'general',
+    label: 'GENERAL',
+    translationKey: 'menu.general',
+    isTitle: true,
+  },
+  {
+    key: 'dashboard',
+    label: 'Dashboard',
+    translationKey: 'menu.dashboard',
+    icon: 'solar:widget-5-bold-duotone',
+    url: '/dashboard',
+  },
+  {
+    key: 'heavy-ride-title',
+    label: 'HEAVY RIDE',
+    translationKey: 'menu.heavyRide',
+    isTitle: true,
+  },
+  {
+    key: 'heavy-ride-cranes',
+    label: 'Cranes',
+    translationKey: 'menu.cranes',
+    url: '/heavy-ride/cranes',
+    icon: 'solar:settings-bold-duotone',
+  },
+  {
+    key: 'heavy-ride-rides',
+    label: 'Rides',
+    translationKey: 'menu.rides',
+    url: '/heavy-ride/rides',
+    icon: 'solar:settings-bold-duotone',
+  },
+  {
+    key: 'heavy-ride-drivers',
+    label: 'Drivers',
+    translationKey: 'menu.drivers',
+    url: '/heavy-ride/drivers',
+    icon: 'solar:settings-bold-duotone',
+  },
+  {
+    key: 'heavy-ride-transactions',
+    label: 'Transactions',
+    translationKey: 'menu.transactions',
+    url: '/heavy-ride/transactions',
+    icon: 'solar:settings-bold-duotone',
+  },
+  {
+    key: 'Admins-Titl',
+    label: 'Admins',
+    translationKey: 'menu.adminsTitle',
+    isTitle: true,
+  },
+  {
+    key: 'admins',
+    label: 'Admins',
+    translationKey: 'menu.admins',
+    icon: 'solar:truck-bold-duotone',
+    children: [
+      {
+        key: 'admins',
+        label: 'Admins',
+        translationKey: 'menu.admins',
+        url: '/admins',
+        parentKey: 'admins',
+      },
+    ],
+  },
+
+  {
+    key: 'account',
+    label: 'ACCOUNT',
+    translationKey: 'menu.account',
+    isTitle: true,
+  },
+  {
+    key: 'profile',
+    label: 'Profile',
+    translationKey: 'menu.profile',
+    icon: 'solar:chat-square-like-bold-duotone',
+    url: '/profile',
+  },
+  {
+    key: 'settings',
+    label: 'Settings',
+    translationKey: 'menu.settings',
+    icon: 'solar:settings-bold-duotone',
+    url: '/settings',
+  },
+];
